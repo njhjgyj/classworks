@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+/* calculator work */
+        /* .tdclass {
+            color: black;
+            text-align: center;
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 20%;
+            background-color: rgb(218, 218, 218);
+            cursor: pointer;
+        }
+
+        .tdclass:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        table {
+            display: flex;
+            justify-content: center;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 10px;
+            width: 64%;
+            text-align: center;
+        }
+
+        #maindiv {
+            background-color: aqua;
+            width: 20%;
+            position: absolute;
+            right: 40%;
+            bottom: 20%;
+        }
+
+        #cleardiv {
+            text-align: center;
+        }
+
+        #secdiv {
+            text-align: center;
+        }
+
+        #cancelbutt {
+            border: none;
+            background-color: rgb(218, 218, 218);
+            padding: 5px;
+            border-radius: 10px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        #clearbutt {
+            border: none;
+            background-color: rgb(218, 218, 218);
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #cancelbutt:hover {
+            background-color: gray;
+            color: white;
+
+        }
+
+        #clearbutt:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+
+        @media screen and (max-width: 1500px) and (min-width: 280px) {
+
+            #maindiv {
+                width: 100%;
+                position: absolute;
+                right: -0px;
+                bottom: 5%;
+            }
+        } */
+        /* calculator works finish here */
+        
+
+        /* .anything{
+            font-weight: bold;
+            color: blue;
+        } */
+
+        
+        /* .zoom1{
+            width: 1000px;
+        }
+
+        .img2{
+            width: 500px;
+        } */
+
+
+        /* .change{
+            color: white;
+            background-color: red;
+        } */
+
+
+        /* body{
+            background-color: rgb(40, 39, 39);
+        }
+
+        #maindiv{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .bodyclass1{
+            background-color: rgb(104, 104, 235);
+            text-align: center;
+        }
+
+        .bodyclass2{
+            background-color: rgb(40, 39, 39);
+        }
+
+        #butt2{
+            margin-left: 80px;
+            border-radius: 10px;
+            border: none;
+        }
+        
+        #butt1{
+            border-radius: 10px;
+            border: none;
+        }
+
+        #div1{
+            border-radius: 20px;
+            box-shadow: 20px 20px 10px black;
+            transform: rotate(10deg);
+            margin-top: 10%;
+            border: none;
+
+
+        }
+
+        #div2{
+            border-radius: 20px;
+            box-shadow: 20px 20px 10px rgb(44, 44, 231);
+            transform: rotate(10deg);
+            margin-top: 10%;
+            border: none;
+        }
+
+        .butt1class1{
+            margin-left: 35%;
+        } */
+
+
+
+        /* body{
+            background-color: black;
+            color: white;
+        }
+
+        .add1{
+            background-color: aqua;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 50px 30px 10px gray;
+            transform: rotate(180deg);
+            transition-delay: 0.5s;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        #div1 p:hover{
+            transform: rotate(180deg);
+            transition: 0.5s;
+            transition-delay: 0.2s;
+            box-shadow: 50px 30px 10px gray;
+            cursor: pointer;
+        }
+
+        #maindiv{
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+        }
+
+        #butt1, #butt2{
+            margin-left: 45%;
+            border: 1px solid gray;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        #butt1:hover, #butt2:hover{
+            background-color: rgb(58, 58, 58);
+            color: white;
+            transition: 0.5s;
+            transition-delay: 0.2s;
+        }
+
+        .remove{
+            transition: 0.5s;
+            transition-delay: 0.2s;
+        }
+
+        #div1, #div2{
+            margin: 50px;
+        }
+
+        @media screen and (max-width: 1500px) and (min-width: 280px){
+            #div1, #div2{
+                margin: 10px;
+            }
+        }
+
+        @media screen and (max-width: 300px) and (min-width: 250px){
+            #div1, #div2{
+                margin: 20px;
+            }
+            body{
+                width: 150%;
+            }
+        } */
+
+        
+    </style>
+
+</head>
+
+<body id="body1">
+
+    <!-- <form>
+
+        <div id="signupdiv">
+
+        <label>Name: </label> <input type="text" name="name1" id="fname" placeholder="Name">
+
+        <label>Last Name: </label> <input type="text" name="name2" id="lname" placeholder="Last Name">
+
+        <label>Email: </label> <input type="email" name="email1" id="femail" placeholder="Email">
+        
+        <label>Password:  </label> <input type="password" name="pass1" id="pass" placeholder="Password">
+
+        <label>Confirm Password:  </label> <input type="password" name="pass2" id="conpass" placeholder="Confirm Password">
+
+        <input type="submit" name="" id="subbtn" onclick="return foo1()">
+
+        </div>
+
+        <div id="signdiv">
+
+        <label>Email: </label> <input type="email" name="email2" id="signemail" placeholder="Email">
+
+        <label>Password: </label> <input type="password" name="pass3" id="signpass" placeholder="Password">
+
+        <input type="submit" name="" id="subbtn2">
+
+        </div>
+
+
+    </form> -->
+
+    <!-- <button onclick="var a  = 'Hello world';alert(a)">click me</button>   inline tareeqa function ko lagane ka -->
+
+    <!-- <button onclick="add(20,50)">Click me to show addition</button>   ye 20,50 jo he ye parameter he ye mene add jo he isspe onclik pe kiya karna he ye mene app3.js ki file men bataya wah he -->
+
+    <!-- <img onmouseout="console.log('haan bhai mouse hat gaya')" onmouseover="console.log('haan bhai mouse over ho gaya')" src="https://pbs.twimg.com/profile_images/1414709080963309570/5gxihAjr_400x400.jpg" width="300px" height="300px" alt="image not found">  
+        onmouseover   and   onmouseout    ka matlab ye he ke jub mouse over ho and jub mouse out ho to kiya karna he bus ye batate hen hum onmouseover men over ka   and   onmouseout men jub mouse hat jaiye tub ka -->
+
+    <!-- <input onfocus="this.style.backgroundColor = 'red'; this.style.color = 'white';" onblur="this.style.backgroundColor = 'yellow'; this.style.color = 'blue';" type="text" name="" id="">
+        onfocus ka matlab he ke  jub focus ho tub kiya hoo matlab jub input ki field men enter karen to kiya ho this.style se hum css apply karsakte hen javascript men hum this.style ki madad se css apply karsakte hen this.style. isske baad app css ki propertiey batate hooke kiya karna he jese ke mene upper input pe
+        onfocus pe likha he ke baackgroundColor blue ho jaiye and color white ho jaiye acha ab css men hum background-color aese likhte the lekin javascript se jub css ko call karen ge to camel case use hooga camel case matlab aik usske baad jese ke background ke baad jo color ki propertiey he ussmen - nahi balke usska
+        c capital hooga aese backgroundColor ab onblur jo likha he usska matlab ye he ke jub input ki field pe click karne ke baad jub bahar click karo to kiya ho bus ye matlab he onfocus ka and onblur ka  -->
+
+    <!-- <button onclick="foo1()">Click me to show hidden text</button>
+        <p id="p1">     
+
+        </p> -->
+
+    <!-- ye jo upper mene aik button banaya he phir usske neeche p tag banaya he isshooga ye ke jese hi button pe click hooga to p ke andar ka text show ho jaiye ga lekin p ke tag ke andar men app3.js ki file men bataon ga ke jese hi button pe click kare to kiya hoona chaheai -->
+
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ratione est, quo a temporibus dolore veritatis fugit commodi minus fuga, deserunt maxime, repellat expedita! Quia praesentium ad animi corrupti vitae!
+        Unde ab similique perferendis sequi tempora magni eius, excepturi alias illo nostrum iste totam nisi necessitatibus quaerat, odit reiciendis deleniti praesentium, veniam quod? Voluptatibus tempora similique quidem itaque voluptatem placeat.</p>
+        <a style="cursor: pointer;" id="abc" onclick="foo1()">Read More</a>
+        <a style="cursor: pointer; display: none;" id="abcd" onclick="foo2()">Read less</a> -->
+
+
+    <!-- Calculator work -->
+
+    <!-- <div id="maindiv">
+
+        <h1>Calculator</h1> <br>
+
+        <div id="secdiv">
+
+            <input type="search" name="" id="inp1"
+                onfocus="this.style.backgroundColor = 'rgb(218, 218, 218)'; this.style.color = 'red';"
+                onblur="this.style.color = 'inherit';this.style. backgroundColor = 'inherit'">
+
+        </div>  secdiv ends here  <br>
+
+        <div id="cleardiv"><br><br><br>
+
+            <button onclick="clear1()" id="clearbutt">Clear</button>
+
+        </div>  cleardiv ends here  <br>
+
+        <table>
+
+            <div id="thirddiv">
+
+                <tr id="tr1">
+
+                    <td onclick="foo1(7)" id="td7" class="tdclass">7</td>
+                    <td onclick="foo1(8)" id="td8" class="tdclass">8</td>
+                    <td onclick="foo1(9)" id="td9" class="tdclass">9</td>
+                    <td onclick="foo1('*')" id="tdmulti" class="tdclass">*</td>
+
+                </tr>
+
+            </div>  thirddiv ends here  <br>
+
+            <div id="fourthdiv">
+
+                <tr id="tr2">
+
+                    <td onclick="foo1(4)" id="td4" class="tdclass">4</td>
+                    <td onclick="foo1(5)" id="td5" class="tdclass">5</td>
+                    <td onclick="foo1(6)" id="td6" class="tdclass">6</td>
+                    <td onclick="foo1('-')" id="tdmines" class="tdclass">-</td>
+
+                </tr>
+
+            </div>  fourthdiv ends here  <br>
+
+            <div id="fifthdiv">
+
+                <tr id="tr3">
+
+                    <td onclick="foo1(1)" id="td1" class="tdclass">1</td>
+                    <td onclick="foo1(2)" id="td2" class="tdclass">2</td>
+                    <td onclick="foo1(3)" id="td3" class="tdclass">3</td>
+                    <td onclick="foo1('+')" id="tdplus" class="tdclass">+</td>
+
+                </tr>
+
+            </div>  fifthdiv ends here  <br>
+
+            <div id="sixthdiv">
+
+                <tr id="tr4">
+
+                    <td onclick="foo1(0)" id="td0" class="tdclass">0</td>
+                    <td onclick="foo1('.')" id="tdpoint" class="tdclass">.</td>
+                    <td onclick="foo1('/')" id="tddivide" class="tdclass">/</td>
+                    <td onclick="foo2()" id="tdequal" class="tdclass">=</td>
+
+                </tr>
+
+            </div>
+
+        </table>  <br><br>
+
+
+    </div>  maindiv ends here  -->
+
+    <!-- Calculator work finish here -->
+
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga earum ducimus quae vitae consequuntur enim maxime, impedit porro similique optio nisi ea molestiae repudiandae facilis obcaecati ab quia corrupti cumque.
+    Inventore dolores voluptatem nobis unde? Molestiae repellendus harum quo at, deserunt quae laborum ratione optio eligendi. Obcaecati quia iste non consectetur asperiores nesciunt perspiciatis. Eligendi natus placeat enim inventore aspernatur!
+    Rerum, totam esse. Odio fugit corporis, tempore, quia doloribus minus nesciunt impedit, atque officiis suscipit corrupti consequuntur placeat obcaecati esse vero dolorem cupiditate! Beatae explicabo, minima quam minus blanditiis rerum.</p>
+    <p id="link1" onclick="foo1()" style="cursor: pointer;">Read more</p><p id="link2" onclick="foo2()" style="cursor: pointer; display: none;">Read less</p> -->
+
+    <!--  javascript:void(0) se ye hoota he ke abhi jese ke a tag men appne read more likha he and jese hi read more pe click karen ge to app3.js ki file men se aur text a jaiye ga lekin agar javascript:void(0) ye nahi lagaiyen ge a ke tag men to read more work nahi kare ga a ke tag pe read more pe click hoiye and mazeed text a jaiye is liye hum javascript:void(0) ye likhte hen a ke tag men  -->
+
+
+    <!-- <p id="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, natus. Sapiente earum iure aliquam eum impedit nostrum illum odio vero porro in, eos nulla totam aut ad ducimus veniam accusamus!
+    Quia sunt nostrum numquam commodi nam quod debitis harum. Reiciendis nulla quaerat, ipsam rerum assumenda accusamus maxime nihil id consectetur ab quam, doloremque sed et minima iste unde aliquid natus!</p>
+    <button id="butt1" onclick="foo1()">Apply <abbr title="Cescading Style Sheets">CSS</abbr></button> <button id="butt2" onclick="foo2()" style="display: none;">Click here to get previous color</button> -->
+
+
+    <!-- <p id="ptag">
+
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat facilis enim sed doloremque pariatur nisi nihil deleniti obcaecati culpa quas optio iusto animi laborum harum, voluptate est? Dignissimos, nam quidem?
+        Provident vitae aliquam ipsam dignissimos ut nesciunt cupiditate, accusamus placeat eius, officiis illo voluptatibus cum non, esse vero voluptas iure dicta atque. Eveniet porro iste quibusdam praesentium id nulla mollitia.
+
+    </p>
+
+    <button id="butt1" onclick="foo1()">Apply <abbr title="Cescading Style Sheets">CSS</abbr></button> -->
+
+
+    <!-- <img id="img1" width="500px" src="https://assets.newatlas.com/dims4/default/7d7620c/2147483647/strip/true/crop/1583x1055+233+0/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F03%2F88%2Fccd853914bc3980b2b5c93f0d326%2F58378604-1054216534779864-7507974485518057472-n.jpg" alt="Image not found"> <br><br>
+    <button id="butt1" onclick="foo1()">Zoom in</button> <button id="butt2" onclick="foo2()" style="display: none;">Zoom out</button> -->
+
+
+    <!-- <p>Hey Hello World</p>
+    <p>Hey Hello World</p>
+    <p>Hey Hello World</p>
+    <p>Hey Hello World</p>
+    <p>Hey Hello World</p>
+    <p>Hey Hello World</p>
+
+    <button id="butt1" onclick="foo1()">Apply  <abbr title="Cescading Style Sheets">CSS</abbr></button> -->
+
+
+    <!-- <div id="maindiv">
+
+    <div id="div1">
+
+        <img width="215px" id="img1" src="https://media.istockphoto.com/photos/light-bulb-concept-picture-id502789173?k=20&m=502789173&s=612x612&w=0&h=_KNmNurJo_CM6deFLJ4ptlyJNy_UFjPVloSm6Rreoq4=" alt="Image Not Found"><br><br>
+
+        <button id="butt1" onclick="foo1()">On Bulb</button>
+
+    </div>  div1 ends here
+    
+
+    <div id="div2">
+
+        <img id="img2" style="display: none;" src="data:image/jpeg;base64,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" alt="Image not found"><br><br>
+
+        <button id="butt2" onclick="foo2()" style="display: none;">Off Bulb</button>
+
+    </div>  div2 ends here
+    
+
+    </div>  maindiv ends here -->
+
+
+    <!-- <div id="maindiv">
+
+        <div id="div1">
+
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+            <p>Hey Hello World</p>
+
+        </div>   div1 ends here 
+
+        <div id="div2">
+
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+            <p>Hey How Are You</p>
+
+        </div>   div2 ends here 
+
+    </div>   maindiv ends here   <br> <br>
+    
+    <button id="butt1" onclick="foo1()">Apply <abbr title="Cescading Style Sheets">CSS</abbr></button>
+
+    <button id="butt2" onclick="foo2()" style="display: none;">Remove <abbr title="Cescading Style Sheets">CSS</abbr></button> -->
+    
+
+    <script src="app3.js">
+    
+    // // ye kaam men sir wala karaha hoon
+
+
+// alert('hey');
+// for(var i = 0; i <=20; i++){
+//     document.write(i + 'Rafay' + '<br>');
+// };
+
+
+// for(var i = 1; i <= 10; i++){
+//     document.write( 2  + ' * ' + i + ' = ' + 2*i + '<br>');
+// };
+
+
+// var i = +prompt('Enter your number to print your Table');
+// for(var j = 1; j <= 10; j++){
+//     document.write(i + ' * ' + ' = ' + i*j + '<br>');
+// };
+
+
+// var i = +prompt('Enter your number to print your Table');
+// var j = +prompt('Enter here where you wanna stop your Table');
+// for(var k = 1; k <= j; k++){
+//     document.write(i + ' * ' + k + ' = ' + i*k + '<br>');
+// };
+
+
+// var a = +prompt('Enter your first value which you choose to perform your task');
+// var b = +prompt('Enter your second value which you wanna choose to perform task with your  first value');
+// var c = prompt('Enter your sign here');
+
+// if(c === '+'){
+//     // document.write(a+b);
+//     document.write(a + ' + ' + b + ' = ' + (a+b));
+// }
+// else if(c === '-'){
+//     // document.write(a-b);
+//     document.write(a + ' - ' + b + ' = ' + (a-b));
+// }
+// else  if(c === '*'){
+//     // document.write(a*b);
+//     document.write(a + ' * ' + b + ' = ' + (a*b));
+// }
+// else if(c === '/'){
+//     // document.write(a/b);
+//     document.write(a + ' / ' + b + ' = ' + (a/b));
+// }else{
+//     alert('This is an error please check your first OR second OR your sign value');
+// }
+
+// var arr = ['Pakistan', 'Austraila', 'South-Africa', 'Sirilanka', 'India'];
+
+// for(var i = 0; i < arr.length; i++){
+//     if(arr[i] === 'Pakistan'){
+//         document.write(arr[i] + ' Han jeet gaya');
+//     }
+//     else if(arr[i] === 'India'){
+//         document.write(' Han ' + arr[i] + ' tu bhi haare ga ');
+//     }
+// }
+
+
+// var arr = ['Pakistan', 'Austraila', 'South-Africa', 'Sirilanka', 'India'];
+
+// for(var i = 0; i < arr.length; i++){
+//     if(arr[i] === 'Pakistan'){
+//         document.write(arr[i] + ' Han jeet gaya');
+//         break;
+//     }
+//     else{
+//         document.write(' Haan India tuu bhi haare ga ');
+//         break;
+//     }
+// }
+
+
+// var a = ' Abdul ';
+// var b = ' RAFAY ';
+// document.write(a.toUpperCase(), ' <br> ' , b.toLowerCase());
+
+
+// var a = ' Abdul ';
+// var b = ' RAFAY ';
+// document.write(a.toUpperCase(), ' <br> ' , b.toLowerCase());
+
+
+// var a = 'aBDUL RAFAY';
+// var b = a.slice(0,1);
+// document.write(b.toUpperCase());
+// var c = a.slice(1);
+// var d = c.toLowerCase();
+// document.write(d);
+
+
+// var user = prompt('Enter you Language Name');
+// var arr = ['English', 'Urdu', 'Arabic', 'Hindi', 'Balochi'];
+// var a = user.slice(0,1);
+// var b = user.slice(1);
+// var c = a.toUpperCase() + b.toLowerCase();
+
+// for(var i = 0; i < arr.length; i++){
+//     if(arr[i] === c){
+//         document.write('Your language was accepted');
+//         break;
+//     }else{
+//         document.write('Your language is not in our list');
+//         break;
+//     }
+// };
+
+
+// var user = prompt('Enter your language here');
+// var arr = ['english', 'urdu', 'arabic', 'hindi', 'saraiki'];
+// var a = user.toUpperCase();
+// var b = user.toLowerCase();
+// var c = a + b;
+
+// for(var i = 0; i < arr.length; i++){
+//     if(arr[i] === b){
+//         document.write('Your language was accepted');
+//         break;
+//     }
+//     else{
+//         document.write('Your language is not in our list')
+//         break;
+//     }
+// }
+
+
+// // Math.random(), random no.genrator,     Math.ceil(), 0.5 OR 0.6 convert into 1,     Math.floor(), 0.5 OR 0.6 convert into 0,     Math.round(), use to round of no.;
+
+// var a = Math.random()*7;
+// console.log(a); // + ' *7 mean 0 se 7 tak koi bhi random no. genrate kare ga *7 aik no. peeche chalta he matlab 7 ke bajaiye 6 tak matlab 0 se le kar 6 tak random no. genrate kare ga';
+	
+// var b = Math.ceil(0.4);
+// console.log(b); // + ' 0.4 convert into 1 OR 9.9 convert into 10 means aik no. aage barhaane ke liye Math.ceil use hoota he';
+	
+// var c = Math.floor(0.6);
+// console.log(c); // + ' 0.6 convert into 0 OR 9.9 conver into 9 means aik no. kam karne ke liye Math.floor use hoota he';
+
+// var d = Math.round(73.4);
+// console.log(d); // + ' 73.4 convert into 73 OR 73.5 convert into 74 means agar 0 se 4 tak ki jo value hoogi ussko kam karde ga and jo 5 se and 5 ke baad jo value aiyen gi unnko barha deega';
+
+
+// // Head and Tail Game
+
+// var head = prompt('Enter your name');
+// var tails = prompt('Enter your name');
+// var toss = Math.random()*2;
+// var ksi = Math.floor(toss);
+// if(ksi == 0){
+//     document.write('Heads ' + head + ' Wins');
+// }else{
+//     document.write('Tails ' + tails + ' Wins');
+// };
+
+
+// charAt, 'konse index pe mojood he woh batane ke liye charAt use hoota he',    replace, 'replace karne ke liye use hoota he replace jese ke aik name lkha he abdul ussko hatake mene rafay likhna matlab replace arna he to woh men replace ki madad se karoon ga replace 2 parameters accept karta he pehle men boolta he ke kis value ko replace karna he aur duusre men boolta he ke kisse replace karna he';
+
+// var a = 'Abdul';
+// console.log(a.charAt(3)); // + ' return kardega ke 3 index pe kiya para he u return kardega ke 3 index pe u para he';
+
+// var b = 'Abdul Rafay Abdul';
+// var c = b.replace('Abdul', 'Rafay'); // + ' Abdul ko replace kardeega Rafay ke sath'
+// console.log(c);
+
+// var d = 'Abdul Rafay Abdul';
+// var e = d.replace(/Abdul/g, 'Rafay'); // + ' /Abdul/g isska matlab ye he ke globaly jhan jhan pe Abdul he ussko Rafay ke saath replace kardega upper waale b.replace men sirf pehle jo Abdul a raha tha sirf ussko replace karraha tha lekin ye waale d.replace men jo /Abdul/g likha he isska matlab ye he ke globaly matlab jhan jhan pe Abdul mile ga ussko Rafay ke saath replace kardega';
+// console.log(e);
+
+
+// var abc = new Date();           // + ' current date and time ko dekhne ke liye hum new Date() use karte hen';
+// document.write(abc);
+
+// var abc = new Date();
+// var a = abc.toString();
+// var b = a.slice(0,15);          // + ' slice is liye lagaya kiyoon ke khaali new Date() likhne pe bohat saari cheezen a rahi thi to mujhe bus thoori si cheezen maaloom karni thi isi liye mene slice lagake boola ke mujhe app bus 0 se le kar 14 tak ki values de do ab jo mene slice men 15 likha woh 14 kehlaiye ga kiyoon ke slice aik no. peeche chalta he  aur jo mene tostring likha usska matlab ye he ke jo new Date tha woh object ki form men tha phir mene issko string kardiya isiliye tostring lagaya he';
+// console.log(b);
+
+// var a = new Date();
+// var b = a.getDay();             // + ' 0 se le kar 6 tuk bataiye ga ab hafte men 7 days hootee hen to ye wohi bata raha he ke day konsa he number ki suurat men bataiye ga ab hafte men to 7 days hoote hen to 6 tak kiyoon bataiye ga woh is liye bataiya ga kiyoon ke 0 bhi count kare ga aur 0 pe sunday hoota he 1 pe monday aur isi tarah aage chalta he';
+// document.write(b);
+
+// var a = new Date();
+// var b = a.getTime();            // + ' getTime() miliseconds batata he 1970 ki midnight se lekar ab tak ke miliseconds batata he';
+// document.write(b);
+
+
+// // Age calculator
+
+// var a = new Date('12 sep, 1999');  // + ' 1970 ki midnight se le kar 12 sep 1999 takke miliseconds count karlega';
+// var b = a.getTime();
+// var c = new Date();
+// var d = c.getTime();               // + ' 1970 ki midnight se le kar ab tak ke miliseconds count karlega';
+// var e = d - b;                     // + ' 1970 se le kar jo ab tuk ke seconds aa rahe the unnko upper waale 1970 se lekar jo 12 sep 1999 tak jo miliseconds aa rahe the usse mines - kardeega phir neeche document.write() men 12 sep, 1999 se le kar ab takke miliseconds batadeega';
+// document.write(e);
+
+// var a = new Date('12 sep, 1999')
+// var b = a.getTime();
+// var c = new Date();
+// var d = c.getTime();
+// var e = d - b;
+// var f = Math.floor(e / (1000*60*60*24*30*12));  // 'ye jo mene e / (1000*60*60*24*30*12) likha he ye aik formula he age nikaalne ka chohte se start hoota he chohte se matlab jo 1000 he woh miliseconds he aur 1000 miliseconds hoote hen to aik seconds banta he isi tarah jo 60 he matlab 60 seconds phir aik aur jo 60 he usska matlab he minutes phir jo 24 he usska matlab he hours phir jo 30 he usska matlab he 30 days  jo 12 he usska matlab he 12 months ye likhna zarori hoota he age calculator men ye formula ache se yaad karna he';
+// document.write(f);
+
+// var a = new Date('9 oct, 2022, 3:46 PM');
+// var b = a.getTime();
+// var c = new Date();
+// var d = c.getTime();             // ye wala mene apne pass se kara he
+// var e = d - b;
+// document.write(e);
+
+// var a = prompt('Enter your date here like, 10 oct, 2000');
+// var b = a;
+// var c = new Date(b);
+// var d = c.getTime();
+// var e = Math.floor(c);
+// var f = new Date();                // ye mene apne pass se kara he
+// var g = f.getTime();
+// var h = g - d;
+// var i = Math.floor(h / (1000*60*60*24*30*12));
+// document.write(i);
+
+
+// Manual functions
+
+// function print(){
+//     document.write('Hello world');
+// }
+// print();
+
+// function counting(){
+//     for(var i = 0; i < 10; i++){
+//         document.write(i + ("<br>"));
+//     }
+// }
+// counting();
+
+// function greet(abc){    // jo mene abc likha he greet ke baad ye parameter he
+//     alert(abc);
+// }
+// greet('Hello Hello')    // yhan pe jo mene greet ko call karke Hello Hello likha he ye argument he matlab function banate hoie function ke name ke baad jo () ye waale brackets men likhen ge wo parameter kehlai jaiye gi aur jo function ko call karke () ye waale brackets men jo likhen gi woh argument kehlai jaiye gi
+
+// function add(a, b){
+//     alert(a + b);
+// }
+// add(9, 9);
+// add( 10, 10);
+
+// function addd(a = 50, b = 50){  // ye jo mene a = 50, b = 50 kara he  issko hum default parameter boolte hen default parameter ye hoota he ke appne parameter ko default value assign kardi
+//     alert(a + b);
+// }
+
+// addd(30, 30);
+// addd(10, 10);
+// addd();   // issmen mene kuch nahi likha to ye 50 and 50 ko plus kardeega kiyoon ke mene upper a = 50, b = 50 likha he aur agar men addd ke andar matlab function ko call karke apne pass se values likhoon ga to jo mene function ko call karke value likhi he woh aiye gi
+
+
+
+
+
+
+
+// ye mera wala kaam he
+
+// function  foo1(){
+//     // var  a = document.getElementById('femail').value;
+
+//     var pass = document.getElementById('pass').value;
+//     var conpass = document.getElementById('conpass').value;
+//     var signup = document.getElementById('signupdiv');
+//     var signin = document.getElementById('signdiv');
+//     if(pass != conpass){
+//         alert('Your password is not match to the registered password');
+//         return false;
+//     }
+//     // var signup1 = signup.style.display = "none";
+//     var signin1 = signin
+//     // signup1;
+
+//     // document.write(signin1);
+//     return true;
+    
+    
+// }
+
+
+// yhan pe mera wala kaam khatam hoota he
+
+
+
+
+
+
+
+// yhan se wapis sir wala kaam start ho raha he
+
+
+// function greet(a,b){
+//     return a + b;
+// }
+
+// var a = greet(30,20);
+// var b = greet(20,20);
+// document.write(a + ('<br>') + b);
+// alert(greet(30,10));
+
+
+// while loop
+
+// var a = 0;
+// while(a <= 10){
+//     document.write(a + ('<br>'));   // for loop men for(var i = 0; i < 10; i++{alert(i)}) aese karte the matlab variable ko for ke baad likhte the lekin while loop men variable bahar likhen ge phir condition wagerah check karwaen ge
+//     a++;    // while loop men increment alert ya document.wrile ya console.log mztlab saara kaam kaam ko jub call karne ke baad increment karwaien ge while loop men for loop men condition ko check karwate hoiye hi increment karte the lekin while men baad men karen ge 
+// }
+
+// while loop ka senario aesa he ke sub se pehle var men value 0 he phir while men aake ussne check kara ke a jo jisske andar 0 value he kiya woh 10 se chohti ya barabar he agar condition true hoojati hee to woh aage jaake document.write men 0 print karega phir neeche ata he to ussko increment milti he phir woh var 1 hoojata he phir waapis
+// while men aake check karta he ke jo a he jissmen value 0 thi pehle to ab to 1 hogaiye he kiya 1 jo he 10 se chohta ya barabar he to woh document.write men 1 print kardeega phir aage jaake ussko increment mil jaiye gi to isstarah ye 10 tak chale ga phir condition jub false ho jaiye gi to loop stop ho jaiye ga iss tarah while loop chalta he
+
+
+// do while loop
+
+// var a = 0;
+// do{
+//     document.write(a + ('<br>'));    // do while loop men bhi pehle variable banate hen phir do likhke karli brackets {} lagate hen phir usske andar boolte hen ke document.write kardo and usske baad increment karte hen
+//     a++
+// }
+// while(a <= 10);   // ab yhan pe karli brackets {} ke baad yaani jo upper do ke karli brackets {} khatam hoone ke baad agli line pe while lagate hen phir () ye waale brackets lagate hen phir condition check karwate hen
+
+// do while loop ka senario aesa he jese ke var a = 0 he ap do lagake humne karli brackets {} lagaiye do matlab karo humne bola aap document.write men a print kardo phir neeche humne boola increment kardo phir while men humne boola ke condition check karo ke kiya a men jo 0 tha matlab a men pehle 0 tha lekin do men jo increment hoiye he ab woh 0   1 ho gaya he ab 
+// jo 1 he kiya woh 10 se chohta ya barabar he to condition true ho jaiye gi to woh wapis upper jaiye ga phir var men value 1 ho gaiye ab do men aake woh document.write men 1 print kardega phir increment hoogi phir wapsi condition check hoogi is tarah do while loop chalta he he do while loop men agar condition false hooti he to woh aik baar code ko chalaiye ga bus aik baar
+// kiyoon ke do whule loop men agar aik baar condition false hoojaati he to woh aik baar chalaiye ga bus aik baar while and for loop men aesa nahi hoota jhan pe ussko condition false milti he wahin pe loop stop hoo jata he lekin do while men aik baar loop chale ga condition false hoone pe bus aik baar jese ke mene neeche kara he
+
+// var a = 20;
+// do{
+//     document.write(a);  // ab yha pe men 20 ko neeche while men check karwa raha hoon ke a jo he a men 20 he ke kiya 20   10 se chohta ya barabar he to condition false hoojati he lekin aik baar output chale ga aur output men 20 aiye ga phir kuch nahi aiye ga
+//     a++
+// }
+// while(a <= 10);
+
+
+// function add(a,b){
+//     alert(a + b);                  // ye argument he isska parameter mene index4.html ki file men likhawah he button pe jo onclick pe add lagawah he usska he ye function
+// } 
+
+
+// function foo1(){
+//     var a = document.getElementById('p1');
+//     a.innerHTML = 'Hey how are you';
+//     a.style.color = "red";
+// }   
+
+// function foo1(){
+//     var a = document.getElementById('abc');
+//     a.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ratione est, quo a temporibus dolore veritatis fugit commodi minus fuga, deserunt maxime, repellat expedita! Quia praesentium ad animi corrupti vitae!Unde ab similique perferendis sequi tempora magni eius, excepturi alias illo nostrum iste totam nisi necessitatibus quaerat, odit reiciendis deleniti praesentium, veniam quod? Voluptatibus tempora similique quidem itaque voluptatem placeat.';
+//     var b = document.getElementById('abcd').style.display = "inherit";
+//     b;
+// }
+
+// function foo2(){
+    
+//     var c = document.getElementById('abc');
+//     c.innerText = '';
+//     c.innerHTML = 'Read More';
+//     var d = document.getElementById('abcd').style.display = "none"
+//     // var d = document.getElementById('abc').style.display = "innherit";
+//     // d;
+// }
+
+
+// // calculator work
+// function foo1(a){
+//     var b = document.getElementById('inp1');
+//     b.value += a;
+    
+// }
+
+// function foo2(){
+//     var c = document.getElementById('inp1');
+//     c.value = eval(c.value);
+// }
+
+// function clear1(){
+//     var d = document.getElementById('inp1');
+//     d.value = 'Cleared';
+// }
+// // calculator work finish here
+
+
+// function foo1(){
+//     var a = document.getElementById('link1');
+//     a.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga earum ducimus quae vitae consequuntur enim maxime, impedit porro similique optio nisi ea molestiae repudiandae facilis obcaecati ab quia corrupti cumque.Inventore dolores voluptatem nobis unde? Molestiae repellendus harum quo at, deserunt quae laborum ratione optio eligendi. Obcaecati quia iste non consectetur asperiores nesciunt perspiciatis. Eligendi natus placeat enim inventore aspernatur!Rerum, totam esse. Odio fugit corporis, tempore, quia doloribus minus nesciunt impedit, atque officiis suscipit corrupti consequuntur placeat obcaecati esse vero dolorem cupiditate! Beatae explicabo, minima quam minus blanditiis rerum.';
+//     var b = document.getElementById('link2').style.display = "inherit";
+//     b;
+// }
+// function foo2(){
+//     var c = document.getElementById('link2').style.display = "none";
+//     var d = document.getElementById('link1');
+//     c = d.innerHTML = 'Read More';
+// }
+
+
+// function foo1(){
+//     var a = document.getElementById('ptag').style.color = "yellow";
+//     var b = document.getElementById('butt2').style.display = "inherit";
+//     var c = document.getElementById('butt1').style.display = "none";
+//     a;
+//     b;
+//     c;
+// }
+
+// function foo2(){
+//     var d = document.getElementById('ptag').style.color = "inherit";
+//     var e = document.getElementById('butt2').style.display = "none";
+//     var f = document.getElementById('butt1').style.display = "inherit";
+//     d;
+//     e;
+//     f;
+// }
+
+
+// javascipt ke zariye html ke kisi bhi tag men class lagane ka tareeka ye he className bus className = 'anything' matlab ye hoya ke agar app aik koi bhi tag banao html men and usspe onclick chalado and jub uss pe click hooto woh jo tag he jisspe appne click kara he usspe class assighn ho jaiye phir app uss class ke name ko utha kar css men call karke css apply karsakte ho
+
+// function foo1(){
+//     var a = document.getElementById('ptag');
+//     a.className = 'anything';
+// }
+
+
+// function foo1(){
+//     var a = document.getElementById('img1');
+//     var b = document.getElementById('butt1').style.display = "none";
+//     var c = document.getElementById('butt2').style.display = "inherit";
+//     a.className = 'zoom1';
+//     b;
+//     c;
+
+// }
+
+// function foo2(){
+//     var c = document.getElementById('butt2').style.display = 'none';
+//     var d = document.getElementById('butt1').style.display   = 'inherit';
+//     var e = document.getElementById('img1')
+//     c;
+//     d;
+//     e.className = 'img2';
+
+// }
+
+
+// function foo1(){
+//     var a = document.getElementsByTagName('p');
+//     // a[1].style.backgroundColor = 'red';
+//     // a[1].style.color = 'white';
+//     // a[5].className = 'change';
+//     for(var i = 0; i < a.length; i++){
+//         a[i].className = 'change';
+//     }
+// }
+
+
+// function foo1(){
+//     var a = document.getElementById('img1').style.display = "none";
+//     var b = document.getElementById('img2').style.display = "inherit";
+//     var c = document.getElementById('butt1').style.display  = "none";
+//     var d = document.getElementById('butt2').style.display = "inherit";
+//     var e = document.getElementById('body1');
+//     a;
+//     b;
+//     c;
+//     d;
+//     e.className = 'bodyclass1';
+// }
+
+// function foo2(){
+//     var f = document.getElementById('img1').style.display = "inherit";
+//     var g = document.getElementById('img2').style.display = "none";
+//     var h = document.getElementById('butt2').style.display = "none";
+//     var i = document.getElementById('butt1').style.display = "inherit";
+//     var j = document.getElementById('body1');
+//     var k = document.getElementById('butt1');
+//     f;
+//     g;
+//     h;
+//     i;
+//     j.className = 'bodyclass2';
+//     k.className = 'butt1class1'
+// }
+
+
+// function foo1(){
+//     var a = document.getElementById('div1').style.color = "red";
+//     var b = document.getElementById('butt2').style.display = "inherit"
+//     var c = document.getElementById('butt1').style.display = "none";
+//     var d = document.getElementById('div1');
+//     a;
+//     b;
+//     c;
+//     d.className = 'add1';
+
+// }
+
+// function foo2(){
+//     var e = document.getElementById('butt2').style.display = "none";
+//     var f = document.getElementById('butt1').style.display = "inherit";
+//     // var g = document.getElementsByClassName('remove');
+//     var rem1 = document.getElementById('div1').style.color = "white";
+//     var rem2 = document.getElementById('div1');
+
+//     e;
+//     f;
+//     rem1;
+//     rem2.className = 'remove';
+// }
+    
+    </script>
+
+</body>
+
+</html>
